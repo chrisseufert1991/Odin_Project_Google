@@ -22,8 +22,14 @@
         margin: 0 auto;
         border-radius: 25px;
         border: 1px solid #D3D3D3;
+        box-shadow: 0px 0px;
+      
         
     }
+    .searchbar:hover {
+            box-shadow: 0px 0px 3px lightblue;
+
+        }
     
 
     .logo         {
@@ -42,18 +48,44 @@
        flex-grow: 2;
        border: 0 solid blue;
    }
+   input:focus {
+       outline:none;
+   }
+   .header-bar {
+       display:flex;
+       flex-direction: row;
+       font-size: 15px;
+       
+       margin: 0px auto;
+       min-width: 100%;
+       position: fixed;
+       
+   }
+   .header-bar div {
+       padding: 10px;
+   }
+   #header-bar-space {
+       flex-grow: .97;
+   }
     </style>
 </head>
 <main>
 <body>
+<div class="header-bar">
+    <div>About</div>
+    <div>Store</div>
+    <div id="header-bar-space"> </div>
+    <div>Gmail</div>
+    <div>Images</div>
 
+</div>
 <div class="logo"> 
     <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google logo" width=auto height=auto>
 </div>
 
 <div>
         <div class="searchbar">
-        <img src="https://cdn0.iconfinder.com/data/icons/material-style/48/search-512.png" alt="img" width=25px height=25px>
+        <img style = "opacity:.6;"src="https://cdn0.iconfinder.com/data/icons/material-style/48/search-512.png" alt="img" width=25px height=25px>
         <input type="text" id="search" name="search" placeholder="Enter search term here">
         <img style="padding-right: 5px;" src="https://upload.wikimedia.org/wikipedia/commons/2/22/Google_microphone_logo.png" alt="img" width=auto height=25px>
         </div>
